@@ -1,10 +1,10 @@
 # r-lint
-[![wercker status](https://app.wercker.com/status/c42b1a62c9b98cd4d8f37c4179f9efee/s "wercker status")](https://app.wercker.com/project/bykey/c42b1a62c9b98cd4d8f37c4179f9efee)
+[![wercker status](https://app.wercker.com/status/a6266405f5c68221412ef3de88f89c95/m "wercker status")](https://app.wercker.com/project/bykey/a6266405f5c68221412ef3de88f89c95)
 
-A step to run a lintr on an R package.  Best used with one of the
-[rocker](https://registry.hub.docker.com/repos/rocker/) images.
+A step to run a lintr on an R package.  This is a fork for [Jim Hesters r-lint](https://github.com/jimhester/wercker-step-r-lint).  Best used with one of the
+[inbobmk](https://hub.docker.com/u/inbobmk/) images.
 ```yaml
-    - jimhester/r-lint
+    - inbobmk/r-lint
 ```
 
 ## Options
@@ -34,6 +34,9 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.0.4
+- assume devtools and lintr are installed
 
 ## 0.0.3
 - Fix bug with installing package.
