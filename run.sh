@@ -11,10 +11,6 @@ run_script () {
 
 export LINTR_ERROR_ON_LINT=true
 run_script <<END
-if (!requireNamespace("devtools", quietly = TRUE)) {
-  install.packages("devtools")
-}
-devtools::install_github("jimhester/lintr")
 devtools::install()
 lintr::lint_package($WERCKER_R_LINT_OPTIONS)
 END
