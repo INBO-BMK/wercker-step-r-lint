@@ -11,7 +11,7 @@ run_script () {
 
 export LINTR_ERROR_ON_LINT=true
 run_script <<END
-devtools::install(upgrade_dependencies = FALSE)
+devtools::install(dependencies = NA, upgrade = FALSE)
 lintr::lint_package($WERCKER_R_LINT_OPTIONS)
 END
 

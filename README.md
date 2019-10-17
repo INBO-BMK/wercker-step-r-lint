@@ -35,6 +35,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 0.0.6
+- upgrade code to latest devtools
+
+## 0.0.5
+- don't upgrade dependencies
+
 ## 0.0.4
 - assume devtools and lintr are installed
 
